@@ -2,3 +2,4 @@ export EDITOR=code
 eval "$(direnv hook zsh)"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
