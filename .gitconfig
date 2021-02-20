@@ -1,6 +1,7 @@
 [user]
   name = Ringo De Smet
   email = ringo@de-smet.name
+	signingkey = 766DA9D429541394
 [core]
   editor = code --wait
   excludesfile = ~/.gitignore
@@ -26,3 +27,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true
