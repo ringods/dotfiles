@@ -29,3 +29,7 @@
 	required = true
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
+[tag]
+	gpgsign = true
