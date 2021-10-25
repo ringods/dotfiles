@@ -2,7 +2,7 @@ export EDITOR=code
 eval "$(direnv hook zsh)"
 
 export GOPATH=/Users/ringods/Projects/golang
-export PATH="/usr/local/opt/node@12/bin:${GOPATH}/bin:${PATH}"
+export PATH="/usr/local/opt/node@16/bin:${GOPATH}/bin:${PATH}"
 
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
