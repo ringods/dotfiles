@@ -8,3 +8,7 @@ export PATH="${VOLTA_HOME}/bin:${GOPATH}/bin:${PATH}"
 
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
+# 1Password CLI Shell plugins integration
+# https://developer.1password.com/docs/cli/about-biometric-unlock
+export OP_BIOMETRIC_UNLOCK_ENABLED=true
