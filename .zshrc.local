@@ -1,7 +1,7 @@
 export EDITOR=code
 eval "$(direnv hook zsh)"
 
-export GOPATH=/Users/ringods/Projects/golang
+export GOPATH=${HOME}/Projects/golang
 
 export VOLTA_HOME=${HOME}/.volta
 export PATH="${VOLTA_HOME}/bin:${GOPATH}/bin:${PATH}"
@@ -12,3 +12,4 @@ source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 # 1Password CLI Shell plugins integration
 # https://developer.1password.com/docs/cli/about-biometric-unlock
 export OP_BIOMETRIC_UNLOCK_ENABLED=true
+source ${HOME}/.op/plugins.sh
