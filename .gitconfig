@@ -1,7 +1,7 @@
 [user]
-  name = Ringo De Smet
+	name = Ringo De Smet
   email = ringo@de-smet.name
-	signingkey = 766DA9D429541394
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICFageyfFhtV5ioICaSXEyY5qJ4EGCEdp6wWkot3LGcv
 [core]
   editor = code --wait
   excludesfile = ~/.gitignore
@@ -33,3 +33,10 @@
 	defaultBranch = main
 [tag]
 	gpgsign = true
+[pull]
+	rebase = false
+
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
