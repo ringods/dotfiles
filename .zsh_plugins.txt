@@ -1,2 +1,1 @@
 axieax/zsh-starship
-r17x/zsh-volta

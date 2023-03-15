@@ -15,6 +15,10 @@ source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
 
+# No volta plugin only configured these env variables
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 eval "$(direnv hook zsh)"
 
 export GOPATH=${HOME}/Projects/golang
