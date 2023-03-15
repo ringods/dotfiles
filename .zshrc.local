@@ -1,4 +1,11 @@
 export EDITOR=code
+
+# source antidote
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+antidote load
+
 eval "$(direnv hook zsh)"
 
 export GOPATH=${HOME}/Projects/golang
