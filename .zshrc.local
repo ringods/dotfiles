@@ -19,10 +19,13 @@ antidote load
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# direnv.net
 eval "$(direnv hook zsh)"
 
+# golang
 export GOPATH=${HOME}/Projects/golang
 
+# gcloud CLI
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
@@ -30,3 +33,7 @@ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/compl
 # https://developer.1password.com/docs/cli/about-biometric-unlock
 export OP_BIOMETRIC_UNLOCK_ENABLED=true
 source ${HOME}/.op/plugins.sh
+
+# Temp fix for 1pwd + git 2.40.0
+# Source: https://1password.community/discussion/comment/680126/#Comment_680126
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
